@@ -4,7 +4,6 @@ const personalDatas = [
     name: "Nicolas Jose Tudela",
     label: "Sofware developer",
     picture: null,
-    email: "nicolastudela@gmail.com",
     phone: "05491153254124",
     website: "nicolastudela.com",
     summary: `Software engineer with over 10 years of experience. Full stack software architect and developer specializing in numerous languages and technologies such as Javascript, ReactJs, Html, CSS and Java`
@@ -16,6 +15,7 @@ const users = [
     id: "0",
     personalData: personalDatas.find(pi => pi.owner === "0"),
     role: "ADMIN",
+    email: "nicolastudela@gmail.com",
     profiles: [
       {
         network: "FACEBOOK",
