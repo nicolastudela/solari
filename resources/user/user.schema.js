@@ -15,11 +15,9 @@ const typeDef = gql`
 
   type User {
     id: ID!
-    personalData: Personal!
+    personalData: Personal
     role: Role!
     email: String!
-    profiles: [Profile]
-    interests: [Interest]
   }
 
   type Personal {
@@ -29,6 +27,8 @@ const typeDef = gql`
     phone: String
     website: String
     summary: String
+    profiles: [Profile]
+    interests: [Interest]
   }
 
   type Profile {
@@ -40,6 +40,10 @@ const typeDef = gql`
   type Interest {
     name: String!
     keywords: [String]
+  }
+
+  extend type Query {
+    me: User!
   }
 `;
 
