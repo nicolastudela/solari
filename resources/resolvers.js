@@ -1,3 +1,6 @@
-const ownerResolvers = require("./owner/owner.resolvers");
+const merge = require("lodash.merge");
 
-module.exports = ownerResolvers;
+const ownerResolvers = require("./owner/owner.resolvers");
+const userResolvers = require("./user/user.resolvers");
+
+module.exports = merge(ownerResolvers, userResolvers);
