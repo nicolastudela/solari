@@ -1,10 +1,10 @@
 **Description**
 
-GraphQL API serving data/flows for nicolastudela.com. It will interact with the client-app thorught an Graphql API, allowing the client-app asking for the owner(myself) resume, and other data; Also allowing users to signin/signup/write notes/posts. Also will return data about my Spotify account (most heard songs/albums/ .. etc). 
+GraphQL API serving data/flows for nicolastudela.com. It will allow the client-app ask for the owner(myself) resume, and other data; Also allowing usersto signin/signup/write notes/posts. Also in next versions will return data about my Spotify account (most heard songs/albums/ .. etc). And users post notes or whatever they want.  
 
 ## Motivation
 
-This server was created mainly to learn and reseach about Apollo Server/GraphQL/Node.js technologies, along with the pourpose of serve data to my personal site. (This data will be pretty much static, but I want also use this as way to show some of my skills.
+This server was created mainly to learn and reseach about Apollo Server/GraphQL/Node.js technologies, along with the pourpose of serve data to my personal site. (This data will be pretty much static, but I wanted also use this as way to show some of my skills.
 
 **The project is still on its early stage** 
 
@@ -22,14 +22,14 @@ For now it will be a plain (non-transpiled) app. And just relying only on ES6 fe
 
 ### Provide basic data, mostly read only actions  (V1)
 
-Having Basic user/resume/ownerdata filled in to the local db
-Basic access to the user/resume/owner data through the API
-Being able to sign-in receive access-token and call me 
-Being able to deploy app using a live instance of a MongoDB
-Includes Secrets in now.sh and internal config
-Includes how to create an instance of live-prod MongoDB in the cloud
-Calling inits using API to fill user/resume/owner data
-Check accessing API from the webapp 
+- Having Basic user/resume/ownerdata filled in to the local db
+- Basic access to the user/resume/owner data through the API
+- Being able to sign-in receive access-token and call me 
+- Being able to deploy app using a live instance of a MongoDB
+  - Includes Secrets in now.sh and internal config
+  - Includes how to create an instance of live-prod MongoDB in the cloud
+  - Calling inits using API to fill user/resume/owner data
+  - Check accessing API from the webapp 
 
 
 ### Connect to Spotify  (V2)
