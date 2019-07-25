@@ -14,7 +14,6 @@ const typeDef = gql`
   }
 
   type User {
-    id: ID!
     personalData: Personal
     role: Role!
     email: String!
@@ -42,8 +41,17 @@ const typeDef = gql`
     keywords: [String]
   }
 
+  type AuthPayload {
+    user: User!
+    token: String!
+  }
+
   extend type Query {
     me: User!
+  }
+
+  extend type Mutation {
+    signin(email: String, password: String): AuthPayload
   }
 `;
 

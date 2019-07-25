@@ -58,5 +58,6 @@ const getUserFromRequest = async req => {
 module.exports = {
   verifyToken,
   getUserFromRequest,
-  internalSignup
+  internalSignup,
+  newToken
 };
