@@ -35,6 +35,7 @@ const typeDef = gql`
 
   type WorkExperience {
     company: String
+    companyWebsite: String
     position: String!
     website: String
     current: Boolean
@@ -56,9 +57,17 @@ const typeDef = gql`
   type Resume {
     summary: String
     education: [Education]!
-    language: [Language]!
-    workExperience: [WorkExperience]!
+    languages: [Language]!
+    workExperiences: [WorkExperience]!
     skills: [Skill]!
+  }
+
+  extend type Query {
+    resume: Resume!
+  }
+
+  extend type Mutation {
+    resetResume: Resume
   }
 `;
 

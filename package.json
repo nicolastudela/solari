@@ -9,6 +9,9 @@
     "dev": "micro-dev",
     "inspect": "node --inspect node_modules/.bin/micro-dev"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "author": "Nicolas Tudela",
   "license": "ISC",
   "dependencies": {
