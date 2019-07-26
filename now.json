@@ -1,5 +1,11 @@
 {
   "version": 2,
   "builds": [{ "src": "index.js", "use": "@now/node" }],
-  "routes": [{ "src": "/.*", "methods": ["POST", "GET"], "dest": "index.js" }]
+  "routes": [{ "src": "/.*", "methods": ["POST", "GET"], "dest": "index.js" }],
+  "alias": ["api.nicolastudela.com"],
+  "env": {
+    "SOLARI_JWT_SECRET": "@solari_jwt_secret",
+    "SOLARI_MONGODB_URI": "@solari_mongodb_uri"
+  }
 }
+

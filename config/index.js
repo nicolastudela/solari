@@ -8,13 +8,13 @@ const baseConfig = {
   isDev: env === "development",
   isTest: env === "testing",
   secrets: {
-    jwt: process.env.JWT_SECRET,
+    jwt: process.env.SOLARI_JWT_SECRET,
     jwtExp: "100d"
-  }
+  },
+  dbUrl: process.env.SOLARI_MONGODB_URI
 };
 
 let envConfig = {};
-
 
 switch (env) {
   case "dev":
@@ -25,9 +25,12 @@ switch (env) {
   case "testing":
     envConfig = require("./testing");
     break;
+  case "production":
+  case "prod":
+    envConfig = require("./prod");
+    break;
   default:
     envConfig = require("./dev");
 }
-
 
 module.exports = merge(baseConfig, envConfig);
