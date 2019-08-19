@@ -51,7 +51,9 @@ const typeDef = gql`
   type Skill {
     name: String!
     level: SkillLevel!
+    scope: ProgrammingScope
     keywords: [String]
+    priority: Int
   }
 
   type Resume {

@@ -1,7 +1,8 @@
 const { send } = require("micro");
-const { router, get, post } = require("microrouter");
+const { router, get, post, options } = require("microrouter");
 const { ApolloServer } = require("apollo-server-micro");
 const merge = require("lodash.merge");
+const cors = require("micro-cors")();
 
 const resourcesTypeDefs = require("./resources/typedefs");
 const resourcesResolvers = require("./resources/resolvers");
@@ -32,11 +33,12 @@ const graphqlHandler = apolloServer.createHandler({ path: graphqlPath });
 const notfound = (req, res) => send(res, 404, "Not found route");
 
 const routerr = router(
-  post(graphqlPath, graphqlHandler),
-  get(graphqlPath, graphqlHandler),
-  post("/internalSignup", internalSignup),
-  get("/", (req, ress) => send(ress, 200, `Welcome!`)),
-  get("/*", notfound)
+  cors(post(graphqlPath, graphqlHandler)),
+  cors(get(graphqlPath, graphqlHandler)),
+  cors(options(graphqlPath, (req, ress) => send(ress, 200, `Working`))),
+  cors(post("/internalSignup", internalSignup)),
+  cors(get("/", (req, ress) => send(ress, 200, `Welcome!`))),
+  cors(get("/*", notfound))
 );
 
 module.exports = async (req, res) => {
