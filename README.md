@@ -47,7 +47,7 @@ For now it will be a plain (non-transpiled) app. And just relying only on ES6 fe
 // TODO Not defined yet, but there will be for sure a kind of blog where people can post notes, or thoughts. Whatever. It will be used to show that users could login and post/delete stuff
 
 
-## APIS STATUS AT 18/07
+## APIS STATUS AT 19/08
 
 ### USER
 
