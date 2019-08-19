@@ -206,142 +206,203 @@ const resume = {
     {
       name: "Javascript",
       level: "PROFICIENT",
-      keywords: ["javascript", "fullstack"]
+      keywords: ["javascript", "fullstack"],
+      scope: "FULL_STACK",
+      priority: 4
     },
     {
       name: "Functional Programming",
       level: "PROFICIENT",
-      keywords: ["javascript", "fullstack", "java"]
+      scope: "FULL_STACK",
+      keywords: ["javascript", "fullstack", "java"],
+      priority: 2
     },
     {
       name: "React.js",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      keywords: ["javascript", "frontend"],
+      scope: "FRONT_END",
+      priority: 4
     },
     {
       name: "HTML5/CSS",
       level: "PROFICIENT",
-      keywords: ["frontend"]
+      keywords: ["frontend"],
+      scope: "FRONT_END",
+      priority: 3
     },
     {
       name: "SASS/LESS",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      keywords: ["javascript", "frontend"],
+      scope: "FRONT_END",
+      priority: 2
     },
     {
       name: "Jest",
       level: "PROFICIENT",
-      keywords: ["javascript", "fullstack"]
+      keywords: ["javascript", "fullstack"],
+      scope: "FULL_STACK",
+      priority: 3
     },
     {
       name: "Version Control ( GIT )",
       level: "PROFICIENT",
-      keywords: ["fullstack"]
+      keywords: ["fullstack"],
+      scope: "FULL_STACK",
+      priority: 4
     },
     {
       name: "Team Leadership / Project Management",
       level: "PROFICIENT",
-      keywords: ["fullstack", "non-programming"]
+      keywords: ["fullstack", "non-programming"],
+      scope: "FULL_STACK",
+      priority: 3
     },
     {
       name: "Node.js",
       level: "DEVELOPING",
-      keywords: ["javascript", "backend", "fullstack"]
+      keywords: ["javascript", "backend", "fullstack"],
+      scope: "FULL_STACK",
+      priority: 4
     },
     {
       name: "Kanban methodologies / Scrum Framework",
       level: "ADVANCED",
+      scope: "FULL_STACK",
       keywords: ["fullstack", "non-programming"]
     },
     {
       name: "Webpack",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 3
     },
     {
       name: "Babel",
       level: "PROFICIENT",
-      keywords: ["javascript", "fullstack"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "fullstack"],
+      priority: 3
     },
     {
       name: "CSS-IN-JS",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 2
     },
     {
       name: "Create React App",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 2
     },
     {
       name: "Material UI",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 2
     },
     {
       name: "Styled System / Emotion.js",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 3
     },
     {
       name: "Now.sh",
       level: "DEVELOPING",
-      keywords: ["fullstack", "non-programming"]
+      scope: "FULL_STACK",
+      keywords: ["fullstack", "non-programming"],
+      priority: 2
     },
     {
       name: "GraphQL",
       level: "DEVELOPING",
-      keywords: ["javascript", "fullstack", "database"]
+      scope: "FULL_STACK",
+      keywords: ["javascript", "fullstack", "database"],
+      priority: 4
     },
     {
       name: "REST",
       level: "PROFICIENT",
+      scope: "FULL_STACK",
       keywords: ["javascript", "fullstack", "non-programming"]
     },
     {
       name: "SQL",
       level: "PROFICIENT",
-      keywords: ["database"]
+      scope: "BACK_END",
+      keywords: ["database", "backend"],
+      priority: 2
     },
     {
       name: "Apollo Server",
       level: "DEVELOPING",
-      keywords: ["javascript", "backend"]
+      scope: "BACK_END",
+      keywords: ["javascript", "backend"],
+      priority: 3
+    },
+    {
+      name: "Apollo Client",
+      level: "DEVELOPING",
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 3
     },
     {
       name: "Redux",
       level: "PROFICIENT",
-      keywords: ["javascript", "frontend"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend"],
+      priority: 3
     },
     {
       name: "Domain Modeling, TDD, Design Patterns, OOP",
       level: "ADVANCED",
-      keywords: ["javascript", "fullstack", "java"]
+      scope: "FULL_STACK",
+      keywords: ["javascript", "fullstack", "java"],
+      priority: 2
     },
     {
       name: "Java",
       level: "ADVANCED",
-      keywords: ["backend", "fullstack", "java"]
+      scope: "FULL_STACK",
+      keywords: ["backend", "fullstack", "java"],
+      priority: 4
     },
     {
-      name: "PHP",
+      name: "PHP / Prestashop",
       level: "NOVICE",
-      keywords: ["fullstack", "php"]
+      scope: "FULL_STACK",
+      keywords: ["fullstack", "php"],
+      priority: 1
     },
     {
       name: "MongoDB",
       level: "NOVICE",
-      keywords: ["backend", "database"]
+      scope: "BACK_END",
+      keywords: ["backend", "database"],
+      priority: 2
     },
     {
       name: "Cassandra",
       level: "DEVELOPING",
-      keywords: ["backend", "database"]
+      scope: "BACK_END",
+      keywords: ["backend", "database"],
+      priority: 2
     },
     {
       name: "Next.js",
       level: "DEVELOPING",
-      keywords: ["javascript", "frontend", "ssr"]
+      scope: "FRONT_END",
+      keywords: ["javascript", "frontend", "ssr"],
+      priority: 1
     }
   ]
 };

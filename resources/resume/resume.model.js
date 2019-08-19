@@ -68,7 +68,12 @@ const resumeSchema = new mongoose.Schema({
         required: true,
         enum: ["ADVANCED", "PROFICIENT", "DEVELOPING", "NOVICE"]
       },
-      keywords: [String]
+      keywords: [String],
+      scope: {
+        type: String,
+        enum: ["BACK_END", "FRONT_END", "FULL_STACK"]
+      },
+      priority: Number
     })
   ],
   createdBy: {
