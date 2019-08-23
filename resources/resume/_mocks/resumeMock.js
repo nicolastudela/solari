@@ -17,7 +17,7 @@ const resume = {
         "Backend built from scratch using Node.js v10"
       ],
       scope: "FULL_STACK",
-      programmingLanguages: ["Javascript"],
+      programmingLanguages: ["JAVASCRIPT"],
       technologies: [
         "React.js",
         "React-Hooks",
@@ -54,7 +54,7 @@ const resume = {
         "User authentication flow"
       ],
       scope: "FRONT_END",
-      programmingLanguages: ["Javascript"],
+      programmingLanguages: ["JAVASCRIPT"],
       technologies: [
         "React.js",
         "CSS-IN-JS",
@@ -81,7 +81,7 @@ const resume = {
         "Coaching of team teammates"
       ],
       scope: "FULL_STACK",
-      programmingLanguages: ["Javascript", "Ruby"],
+      programmingLanguages: ["JAVASCRIPT", "RUBY_ON_RAILS"],
       technologies: [
         "React.js",
         "React Router",
@@ -107,7 +107,7 @@ const resume = {
       summary: `Software Engineer for Professional Services developing Node + AngularJS apps and REST APIs using JAVA + Dropwizard.`,
       highlights: [],
       scope: "FULL_STACK",
-      programmingLanguages: ["Javascript", "Java"],
+      programmingLanguages: ["JAVASCRIPT", "JAVA"],
       technologies: [
         "Angular.js",
         "Dropwizard",
@@ -133,7 +133,7 @@ const resume = {
         `Log management, attention to details and building reliable code`
       ],
       scope: "BACK_END",
-      programmingLanguages: ["Java", "Scala"],
+      programmingLanguages: ["JAVA", "SCALA"],
       technologies: ["TestNG", "Cassandra", "Spring", "REST", "MySQL"]
     },
     {
@@ -146,7 +146,7 @@ const resume = {
       summary: `Responsible for a team of 2 people team, requirement capture, estimation, analysis & design and daily status update with the client.`,
       highlights: [],
       scope: "FULL_STACK",
-      programmingLanguages: ["Java"],
+      programmingLanguages: ["JAVA"],
       technologies: ["Seam", "Spring", "Hibernate", "MySQL", "Wicket"]
     },
     {
@@ -159,7 +159,7 @@ const resume = {
       summary: `Various other roles at TeraCode, working as developer using several technologies as: SEAM, Wicket, Spring, Hibernate, Ejbql, JPA,, Mysql, J2EE, Hibernate,Hibernate-Search, MySQL, Ibatis, Quartz, Spring, Wicket, Css, Html etc..`,
       highlights: [],
       scope: "FULL_STACK",
-      programmingLanguages: ["Java"],
+      programmingLanguages: ["JAVA"],
       technologies: []
     },
     {
@@ -173,7 +173,7 @@ const resume = {
       summary: `I successfully installed and fully-customized a PHP e-commerce (Prestahsop) for an audio HiFi store.`,
       highlights: [],
       scope: "FULL_STACK",
-      programmingLanguages: ["Php"],
+      programmingLanguages: ["PHP"],
       technologies: ["Prestashop", "MySQL"]
     }
   ],
@@ -212,7 +212,7 @@ const resume = {
     },
     {
       name: "Functional Programming",
-      level: "PROFICIENT",
+      level: "DEVELOPING",
       scope: "FULL_STACK",
       keywords: ["javascript", "fullstack", "java"],
       priority: 2
@@ -274,14 +274,14 @@ const resume = {
     },
     {
       name: "Webpack",
-      level: "PROFICIENT",
+      level: "DEVELOPING",
       scope: "FRONT_END",
       keywords: ["javascript", "frontend"],
       priority: 3
     },
     {
       name: "Babel",
-      level: "PROFICIENT",
+      level: "DEVELOPING",
       scope: "FRONT_END",
       keywords: ["javascript", "fullstack"],
       priority: 3
