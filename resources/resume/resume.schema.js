@@ -14,6 +14,14 @@ const typeDef = gql`
     FULL_STACK
   }
 
+  enum ProgrammingLanguage {
+    JAVASCRIPT
+    JAVA
+    SCALA
+    RUBY_ON_RAILS
+    PHP
+  }
+
   enum SkillLevel {
     ADVANCED
     PROFICIENT
@@ -44,7 +52,7 @@ const typeDef = gql`
     summary: String
     highlights: [String]
     scope: ProgrammingScope
-    programmingLanguages: [String]
+    programmingLanguages: [ProgrammingLanguage]
     technologies: [String]
   }
 
