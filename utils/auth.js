@@ -48,7 +48,7 @@ const getUserFromRequest = async req => {
   const userFromHeader = token && (await verifyToken(token));
   if (userFromHeader) {
     return User.findById(userFromHeader.id.toString(), "-password")
-      .lean()
+      .lean({ virtuals: true })
       .exec();
   }
 

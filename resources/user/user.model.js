@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const mongooseLeanVirtuals = require("mongoose-lean-virtuals");
 
 const userSchema = new mongoose.Schema(
   {
@@ -96,5 +97,11 @@ userSchema.methods.checkPassword = function(password) {
     });
   });
 };
+
+userSchema.virtual("isAdmin").get((value, virtual, doc) => {
+  return doc.role === "ADMIN";
+});
+
+userSchema.plugin(mongooseLeanVirtuals);
 
 module.exports = mongoose.model("user", userSchema);
