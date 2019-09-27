@@ -42,6 +42,22 @@ const typeDef = gql`
   }
 
   type WorkExperience {
+    _id: String!
+    company: String
+    companyWebsite: String
+    position: String!
+    website: String
+    current: Boolean
+    startDate: Date
+    endDate: Date
+    summary: String
+    highlights: [String]
+    scope: ProgrammingScope
+    programmingLanguages: [ProgrammingLanguage]
+    technologies: [String]
+  }
+
+  input WorkExperienceInput {
     company: String
     companyWebsite: String
     position: String!
@@ -57,6 +73,16 @@ const typeDef = gql`
   }
 
   type Skill {
+    _id: String!
+    name: String!
+    level: SkillLevel!
+    scope: ProgrammingScope
+    keywords: [String]
+    priority: Int
+  }
+
+  input SkillInput {
+    title: String
     name: String!
     level: SkillLevel!
     scope: ProgrammingScope
@@ -78,6 +104,12 @@ const typeDef = gql`
 
   extend type Mutation {
     resetResume: Resume
+    createSkill(skill: SkillInput): Skill
+    removeSkill(id: ID!): ID
+    updateSkill(id: ID!, skill: SkillInput): Skill
+    createWorkExperience(workExperience: WorkExperienceInput): WorkExperience
+    removeWorkExperience(id: ID!): ID
+    updateWorkExperience(id: ID!, workExperience: WorkExperienceInput): WorkExperience
   }
 `;
 

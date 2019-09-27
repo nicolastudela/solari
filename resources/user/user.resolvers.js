@@ -1,3 +1,4 @@
+const { AuthenticationError } = require("apollo-server-micro");
 const User = require("./user.model");
 const { newToken } = require("../../utils/auth");
 
@@ -12,12 +13,12 @@ const resolvers = {
   Mutation: {
     signin: async (_, { email, password }, context) => {
       if (context.user) {
-        throw Error("User already logged");
+        throw AuthenticationError("User already logged");
       }
       const user = await User.findOne({ email });
 
       if (!user || !(await user.checkPassword(password))) {
-        throw Error("user or password not match");
+        throw AuthenticationError("user or password not match");
       }
 
       const token = newToken(user);

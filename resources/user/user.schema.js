@@ -17,6 +17,7 @@ const typeDef = gql`
     personalData: Personal
     role: Role!
     email: String!
+    isAdmin: Boolean!
   }
 
   type Personal {
