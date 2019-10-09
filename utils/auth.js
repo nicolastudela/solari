@@ -36,7 +36,6 @@ const internalSignup = async (req, res) => {
     const token = newToken(user);
     return send(res, 201, { token });
   } catch (error) {
-    console.log(error);
     return send(res, 400, { error });
   }
 };

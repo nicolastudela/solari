@@ -13,12 +13,12 @@ const resolvers = {
   Mutation: {
     signin: async (_, { email, password }, context) => {
       if (context.user) {
-        throw AuthenticationError("User already logged");
+        throw new AuthenticationError("User already logged");
       }
       const user = await User.findOne({ email });
 
       if (!user || !(await user.checkPassword(password))) {
-        throw AuthenticationError("user or password not match");
+        throw new AuthenticationError("user or password not match");
       }
 
       const token = newToken(user);
