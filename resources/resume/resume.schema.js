@@ -48,11 +48,11 @@ const typeDef = gql`
     position: String!
     website: String
     current: Boolean
-    startDate: Date
-    endDate: Date
+    startDate: LocalDate!
+    endDate: LocalDate
     summary: String
     highlights: [String]
-    scope: ProgrammingScope
+    scope: ProgrammingScope!
     programmingLanguages: [ProgrammingLanguage]
     technologies: [String]
   }
@@ -63,11 +63,11 @@ const typeDef = gql`
     position: String!
     website: String
     current: Boolean
-    startDate: Date
-    endDate: Date
+    startDate: LocalDate!
+    endDate: LocalDate
     summary: String
     highlights: [String]
-    scope: ProgrammingScope
+    scope: ProgrammingScope!
     programmingLanguages: [ProgrammingLanguage]
     technologies: [String]
   }
