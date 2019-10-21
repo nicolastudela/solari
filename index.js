@@ -30,7 +30,7 @@ const apolloServer = new ApolloServer({
 const graphqlPath = "/graphql";
 const graphqlHandler = apolloServer.createHandler({ path: graphqlPath });
 
-const notfound = (req, res) => send(res, 404, "Not found route");
+const notfound = (req, res) => send(res, 404, "Route not found");
 
 const routerr = router(
   cors(post(graphqlPath, graphqlHandler)),
