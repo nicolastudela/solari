@@ -60,9 +60,20 @@ const crudResolvers = (resumeSubdocument, resourceName) => {
 const resolvers = {
   Query: {
     resume() {
+      // TODO The resume find should be more specific about geting the owner resume only
       return Resume.findOne()
         .lean()
         .exec();
+    },
+    nicolasTudelaSiteExperience: async () => {
+      // TODO The resume find should be more specific about geting the owner resume only
+      const resume = await Resume.findOne()
+        .lean()
+        .exec();
+      const nicoWorkExperience = resume.workExperiences.filter(
+        we => we.company === "nicolastudela.com"
+      )[0];
+      return nicoWorkExperience;
     }
   },
   Mutation: Object.assign(

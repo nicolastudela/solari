@@ -100,6 +100,7 @@ const typeDef = gql`
 
   extend type Query {
     resume: Resume!
+    nicolasTudelaSiteExperience: WorkExperience!
   }
 
   extend type Mutation {
